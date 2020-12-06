@@ -9,11 +9,13 @@
         <nav id='navbar'>
             <header>HTML Basic Examples</header>
             <a href='' id='nav-link' name='Introduction'>Introduction</a>
+            <a href='' id='nav-link' name='Documents'>HTML Documents</a>
             <a href='' id='nav-link' name='declaration'>The &lt;!Doctype&gt; declaration</a>
             <a href='' id='nav-link' name='Headings'>HTML Headings</a>
             <a href='' id='nav-link' name='Paragraphs'>HTML Paragraphs</a>
             <a href='' id='nav-link' name='Images'>HTML Images</a>
             <a href='' id='nav-link' name='source?'>How to view HTML source?</a>
+            <a href='' id='nav-link' name='reference'>Reference</a>
         </nav>
         <main id='main-doc'>
             <section id='Introduction'>
@@ -21,11 +23,83 @@
                 <p>In this chapter we will show some basic HTML examples. <br>
                     Don't worry if we use tags you have not learned about yet.</p>
             </section>
+            <section id='documents'>
+                <header>HTML Documents</header>
+                <p>All HTML documents must start with a document type declaration: <code class='codespan'>&lt;!DOCTYPE html&gt;</code>. <br>
+                    The HTML document itself begins with <code class='codespan'>&lt;html></code> and ends with <code class='codespan'>&lt;/html></code>. <br>              
+                    The visible part of the HTML document is between <code class='codespan'>&lt;body></code> and <code class='codespan'>&lt;/body></code>. </p>
+                    <div class='excode'>
+                    <p>Example:</p>
+                    <code> &lt;!DOCTYPE html><br>
+                        &lt;html><br>
+                        &lt;body><br>
+                        <br>
+                        &lt;h1>My First Heading&lt;/h1><br>
+                        &lt;p>My first paragraph.&lt;/p><br>
+                        
+                        &lt;/body><br>
+                        &lt;/html> 
+                    </code>
+                    </div>
+            </section>
             <section id='declaration'>
                 <header>The &lt;!Doctype&gt; declaration</header>
-                <p>All HTML documents must start with a document type declaration: &lt;!DOCTYPE html&gt;.
-                    The HTML document itself begins with &lt;html> and ends with &lt;/html>.               
-                    The visible part of the HTML document is between &lt;body> and &lt;/body>. </p>
+                <p>The <code class='codespan'>&lt;!DOCTYPE></code> declaration represents the document type, and helps browsers to display web pages correctly.<br>
+                    It must only appear once, at the top of the page (before any HTML tags).
+                    The <code class='codespan'>&lt;!DOCTYPE></code> declaration is not case sensitive.<br>           
+                    The <code class='codespan'>&lt;!DOCTYPE></code> declaration for HTML5 is:</p>
+                    <div class='excode'>
+                        <p>Example:</p>
+                        <code> 
+                            &lt;!DOCTYPE html>
+                        </code>
+                    </div>
+            </section>
+            <section id='Headings'>
+                <header>HTML Headings</header>
+                <p>HTML headings are defined with the <code class='codespan'>&lt;h1></code> to <code class='codespan'>&lt;h6></code> tags.<br>
+                <code class='codespan'>&lt;h1></code> defines the most important heading. <code class='codespan'>&lt;h6></code> defines the least important heading: </p>
+                    <div class='excode'>
+                        <p>Example:</p>
+                        <code>
+                            &lt;h1>This is heading 1&lt;/h1><br>
+                            &lt;h2>This is heading 2&lt;/h2><br>
+                            &lt;h3>This is heading 3&lt;/h3>
+                        </code>
+                    </div>
+            </section>
+            <section id='Paragraphs'>
+                <header>HTML Paragraphs</header>
+                <p>HTML paragraphs are defined with the <code class='codespan'>&lt;p></code> tag:</p>
+                <div class='excode'>
+                    <p>Example:</p>
+                    <code>&lt;p>This is a paragraph.&lt;/p><br>
+                        &lt;p>This is another paragraph.&lt;/p> 
+                    </code>
+                </div>
+            </section>
+            <section id='Images'>
+                <header>HTML Images</header>
+                <p>HTML images are defined with the <code class=codespan'>&lt;img></code> tag.<br>
+                    The source file (src), alternative text (alt), width, and height are provided as attributes:</p>
+                    <div class='excode'>
+                        <p>Example:</p>
+                        <code> &lt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"> </code>
+                    </div>
+            </section>
+            <section id='source?'>
+                <header>How to view HTML Source?</header>
+                Have you ever seen a Web page and wondered "Hey! How did they do that?"
+                <h3>View HTML Source Code:</h3> 
+                Right-click in an HTML page and select "View Page Source" (in Chrome) or "View Source" (in Edge), or similar in other browsers. This will open a window containing the HTML source code of the page.
+                <h3>Inspect an HTML Element:</h3>
+                Right-click on an element (or a blank area), and choose "Inspect" or "Inspect Element" to see what elements are made up of (you will see both the HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the Elements or Styles panel that opens.
+            </section>
+            <section id='reference'>
+                <header>Reference</header>
+                <ul>
+                    <li> All the documentation in this page is taken from <a href='https://www.w3schools.com/html/html_basic.asp'>W3 schools</a></li>
+                </ul>
             </section>
         </main>
     </body>
