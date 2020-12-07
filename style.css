@@ -1,7 +1,61 @@
+@font-face {
+    font-family:'Ubuntu';
+    src: url(css/Ubuntu-Regular.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(css/Ubuntu-Italic.ttf);
+    font-style: italic;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(css/Ubuntu-Bold.ttf);
+    font-weight: bold;
+}
+
 html {
     font-size: 15px;
+    font-style: Ubuntu;
+    font-weight: 100;
 }
 
 body {
     background-color: rgb(141, 243, 141);
 }
+
+
+
+nav {
+    display: block;
+    float: left;
+    position: fixed;
+    width: 20%;
+    top: 5px;
+    left: 0px;
+}
+
+nav > header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+nav > ul > li {
+    font-size: 1.2rem;
+    padding-top:30px;
+    padding-bottom: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+main {
+    width: auto;
+    margin-left: 22%;
+    margin-right: 2%;
+}
+
